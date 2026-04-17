@@ -4,13 +4,13 @@ This repository contains local test environments used to verify technical claims
 
 ## 🛠️ Case Studies
 
-### 1. `setState` Callback Context ([PR #8314](https://github.com/reactjs/react.dev/pull/8314))
+### 1. `setState` Callback Context ([Issue #8314](https://github.com/reactjs/react.dev/issues/8314) | [PR #8414](https://github.com/reactjs/react.dev/pull/8414))
 
 * **Folder:** `src/issue-8314-this-binding`
 * **Goal:** Verify if React automatically binds the `this` context for Class Component `setState` callbacks.
 * **Result:** Confirmed that React internally binds the callback to the component instance. This proves that manual `.bind(this)` or arrow functions are redundant in this scenario.
 
-### 2. Render-Cycle Stability ([PR #8412](https://github.com/reactjs/react.dev/pull/8412))
+### 2. Render-Cycle Stability ([Issue #8411](https://github.com/reactjs/react.dev/issues/8411) | [PR #8412](https://github.com/reactjs/react.dev/pull/8412))
 
 * **Folder:** `src/issue-8411-render-logic`
 * **Goal:** Investigate if conditional state updates in the render body cause a literal infinite loop or restarts the render cycle.
